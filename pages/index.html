@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./Ecologia img/ECOTOPICS.png" alt="Logo Ecotopics"></a>
+
+        <div class="logs">
+            <button><img src="./Ecologia img/ícone menu.png" alt="Menu"></button>
+            
+            <!-- ÁREA DO USUÁRIO LOGADO (inicialmente escondida) -->
+            <div id="areaUsuarioLogado" class="usuario-logado" style="display: none;">
+                <img src="./assets home/Component 14.png" alt="" width="40px">
+                <span id="nomeUsuario">Usuário</span>
+                <button onclick="sair()" class="btn-sair">Sair</button>
+            </div>
+            
+            <!-- Botão/âncora de Login (inicialmente visível) -->
+            <a href="../login/login.html" id="btnLogin" class="login-btn">Entre na sua conta</a>
+        </div>
+
+        <ul>
+            <li><a href="./Biomas.html">Biomas e ecossistemas</a></li>
+            <li><a href="./relacoesecologicas.html">Relações ecológicas</a></li>
+            <li><a href="./s.ecologica.html">Sucessão ecológica</a></li>
+            <li><a href="./ciclos.html">Ciclos bioquímicos</a></li>
+            <li><a href="./indicacoes.html">Indicações</a></li>
+            <li><a href="./materiaisdeapoio.html">Materiais de apoio</a></li>
+            
+            <!-- jogo na mesma pasta -->
+            <li><a href="./jogo1.html">Jogo</a></li>
+
+            <!-- ranking está na pasta ranking -->
+            <li><a href="./frontend/ranking/ranking.html">Ranking</a></li>
+        </ul>
+        
+    </header>
+
+    <div>
+        <h1>A ECOLOGIA <br>
+            DE HOJE </h1>
+        
+        <button><a href="../Ecologia.html">SAIBA MAIS</a></button>
+        
+    </div>
+
+    <!-- SCRIPT PARA GERENCIAR LOGIN/LOGOUT -->
+    <script>
+        // Função para verificar se o usuário está logado
+        function verificarLogin() {
+            const usuarioLogado = localStorage.getItem('usuarioLogado');
+            const nomeUsuario = localStorage.getItem('nomeUsuario');
+            
+            const btnLogin = document.getElementById('btnLogin');
+            const areaUsuarioLogado = document.getElementById('areaUsuarioLogado');
+            const spanNomeUsuario = document.getElementById('nomeUsuario');
+            
+            if (usuarioLogado === 'true' && nomeUsuario) {
+                // Usuário está logado
+                if (btnLogin) btnLogin.style.display = 'none';
+                if (areaUsuarioLogado) areaUsuarioLogado.style.display = 'flex';
+                if (spanNomeUsuario) spanNomeUsuario.textContent = `Olá, ${nomeUsuario}`;
+            } else {
+                // Usuário não está logado
+                if (btnLogin) btnLogin.style.display = 'block';
+                if (areaUsuarioLogado) areaUsuarioLogado.style.display = 'none';
+            }
+        }
+        
+        // Função para fazer logout
+        function sair() {
+            if (confirm('Tem certeza que deseja sair?')) {
+                localStorage.removeItem('usuarioLogado');
+                localStorage.removeItem('nomeUsuario');
+                localStorage.removeItem('emailUsuario');
+                localStorage.removeItem('emailJogador');
+                window.location.reload();
+            }
+        }
+        
+        // Executar quando a página carregar
+        document.addEventListener('DOMContentLoaded', verificarLogin);
+    </script>
+</body>
+</html>

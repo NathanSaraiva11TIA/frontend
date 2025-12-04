@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js" defer></script>
+    <title>Cadastro - Ecotopics</title>
+</head>
+<body>
+    
+    <div class="fundo">
+        <div class="ladoesquerdo">
+            <h1>Vamos lá...</h1>
+            <p>Crie sua conta e comece a explorar todos <br> os recursos que preparamos para você.</p>
+        </div>
+    
+        <div class="ladodireito">
+            <a href="../pages/pages">
+                <img src="../login/x.png" alt="Fechar">
+            </a>
+    
+            <h1 class="cadastro">Cadastre-se</h1>
+    
+           <div class="informações">
+                <label for="nome">Nome:</label>
+                <input class="nome" type="text" id="nome" required>
+
+                <label for="email">E-mail</label>
+                <input class="email" type="email" id="email" required>
+    
+                <label for="senha">Senha</label>
+                <input class="senha" type="password" id="senha" required minlength="6">
+
+                <label for="confirmar_senha">Confirmar senha</label>
+                <input class="confirmar_senha" type="password" id="confirmar_senha" required minlength="6">
+           </div>
+            
+           <button onclick="cadastrar()" id="btnCadastrar">Cadastrar</button>
+            
+        </div>
+    </div>
+
+    <!-- Script de fallback -->
+    <script>
+        // Garante que a função esteja disponível
+        if (typeof cadastrar === 'undefined') {
+            console.error("Função cadastrar não encontrada! Carregando fallback...");
+            // Fallback simples
+            window.cadastrar = function() {
+                alert("Erro: JavaScript não carregou corretamente. Recarregue a página.");
+            };
+        } else {
+            console.log("Função cadastrar carregada com sucesso!");
+        }
+    </script>
+</body>
+</html>

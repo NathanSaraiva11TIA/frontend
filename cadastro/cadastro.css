@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body { 
+    background-image: url(../login/0368743_view-over-foggy-jungle_photowallpaper__800.jpeg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.informações {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    padding-left: 1.7rem;
+    padding-top: 1rem;
+}
+
+.informações label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff; 
+}
+
+
+.informações input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    padding: 8px 0;
+    font-size: 16px;
+    color: white;
+    outline: none;
+    
+}
+
+.informações input:focus {
+    border-bottom: 1px solid #ffffff;
+}
+
+.fundo {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 5rem auto; 
+    width: 90rem; 
+    height: 50rem;
+    padding: 4rem 4rem; 
+    padding-top: 5rem;
+    display: flex;
+
+}
+
+.ladoesquerdo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    h1{
+        color: #ffffff;
+        font-family: "Open Sans", sans-serif;
+        font-size: 2.8rem;
+        font-weight: 800;
+        margin-top: -2rem;
+        margin-left: 2rem;
+    }
+
+    p{
+        color: #ffffff;
+        margin-left: 2rem;
+        padding-top: 1rem;
+        font-family: "Inknut Antiqua", serif;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+}
+
+
+.cadastro{
+    margin-bottom: 1rem;
+    margin-right: 11.5rem;
+}
+
+.ladodireito {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    padding-right: 3rem;
+
+    .informações {
+        gap: 2rem;
+    }
+
+    img {
+        position: absolute;
+        top: -3.5rem;
+        right: -2rem;
+        width: 1.5rem;      
+        cursor: pointer;
+    }
+
+    h1{
+        color: #ffffff;
+        font-family: "Open Sans", sans-serif;
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    p{
+        color: #ffffff;
+        padding-top: 0.5rem;
+        text-align: center;
+        font-family: "Inknut Antiqua", serif;
+        font-size: 1rem;
+        line-height: 1.5;
+        padding-bottom: 4.5rem;
+
+    }
+
+
+
+    button{
+        background-color:  #2C4E2E;
+        font-family: "Open Sans", sans-serif;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.5rem;
+        width: 20rem;
+        height: 3rem;
+        margin-top: 7rem;
+        border-radius: 0.3rem;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        margin-left: 5rem;
+
+    }
+
+    button:hover {
+        background-color: #3c683f;
+        border-width: 0.1rem;
+        border-style: solid;
+        border-color: #ffffff;
+        transition: background 0.2s ease; 
+      }
+    
+
+    .confirmar_senha{
+        margin-bottom: -6rem;
+    }
+}
+
+
+

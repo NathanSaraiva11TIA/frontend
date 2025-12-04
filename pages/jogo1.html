@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaia's Keepers</title>
+    <link rel="stylesheet" href="jogo1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button class="comecar-aventura"><a href="../pages/jogo2.html">Começar aventura</a></button>
+
+    <div class="door">
+        <button id="openPopup">
+            <img src="./Assets_jogo/Assets_jogo/porta.png" alt="porta">
+        </button>
+    </div>
+
+    <!-- Pop-up -->
+    <div class="overlay" id="popupOverlay">
+        <div class="popup">
+            <h2>Deseja voltar pra<br>página inicial?</h2>
+            <div class="buttons">
+                <button id="yesBtn" class="yes">Sim</button>
+                <button id="noBtn" class="no">Não</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./jogo1.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+        background-image: url(./imagem_de_fundo/0368743_view-over-foggy-jungle_photowallpaper__800.jpeg);
+        backdrop-filter: brightness(60%);
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 100;
+    top: 0;
+    transform-origin: top left;
+}
+
+header button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 2rem; 
+}
+
+header a {
+    padding: 1.5rem;
+    margin-left: 1rem;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 0.5%;
+    right: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+    z-index: 1000;
+    width: auto;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+header ul.show {
+    display: block;
+    opacity: 1;
+}
+
+header ul li {
+    margin: 1.2rem 0;
+    white-space: nowrap;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #AFACA9;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.fundo {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 2rem auto; 
+    width: 90rem; 
+    height: 47.5rem;
+    padding: 4rem 4rem; 
+    border-radius: 3rem; 
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    position: relative; 
+}
+
+.fundo h1 {
+    color: white; 
+    font-size: 3rem; 
+    
+    position: absolute; 
+    top: 1rem; 
+    left: 50%; 
+    transform: translateX(-50%);
+
+    font-family: "Bree Serif", serif;
+    font-weight: 200;
+    font-size: 3.5rem;
+    margin-top: -1rem;
+}
+
+
+.videos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem;
+    margin-top: 6rem; 
+
+   
+}
+
+
+
+
+.thumbnail {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+/* animação hover */
+.thumbnail:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+.fundo p {
+    color: white;
+    margin-top: 0.2rem;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 1rem;
+}
+
+.videos1 {
+    width: 29.56rem;
+    height: 16.12rem;
+}

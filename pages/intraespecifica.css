@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #1E1E1E;
+    min-height: 100svh;
+    overflow-x: hidden;
+    color: white;
+}
+
+.fundo {
+    background-image: 
+    linear-gradient(
+            to bottom,
+            rgba(133, 91, 85, 0.25) 0%,
+            rgba(132, 135, 122, 0.50) 21%,
+            rgba(90, 92, 81, 0.70) 47%,
+            rgba(35, 39, 34, 0.89) 89%,
+            rgba(0, 0, 0, 1) 100%
+        ),
+    url(../intra_especifica_img/image_43.png);
+
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 100svh;
+}
+
+.fundo > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100svh - 88px);
+    padding-block: 2rem;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    top: 0;
+    transform-origin: top left;
+}
+
+header button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 2rem; 
+}
+
+header a {
+    padding: 1.5rem;
+    margin-left: 1rem;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 0.5%;
+    right: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+    z-index: 1000;
+    width: auto;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+header ul.show {
+    display: block;
+    opacity: 1;
+}
+
+header ul li {
+    margin: 1.2rem 0;
+    white-space: nowrap;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #AFACA9;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.seta {
+    margin-top: -1.5rem;
+    padding-left: 3.7rem;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 5rem;
+    padding-left: 3.5rem;
+}
+
+.linha {
+    padding-left: 5rem;
+    margin-top: 5rem;
+}
+
+a {
+    color: inherit;      
+    text-decoration: none; 
+}
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 2rem;
+}
+
+.Sociedade {
+    padding-left: 1.2rem;
+    margin-top: -6rem;
+}
+
+.Colonia {
+    padding-left: 17.5rem;
+    margin-top: 5rem;
+}
+
+.Canibalismo {
+    padding-left: 31rem;
+    margin-top: -10.5rem;
+    margin-bottom: 10.5rem;
+}
+
+.Competicoes {
+    padding-left: 48.8rem;
+    margin-top: -5.45rem;
+}
+
+.sociedade {
+    margin-top: 31rem;
+    margin-left: 6rem;
+}
+
+.abelha {
+    width: 57rem;
+    height: 45rem;
+    border-radius: 1rem;
+}
+
+h2 {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+}
+
+p {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 2rem;  
+}
+
+h4 {
+    font-family: "Metrophobic", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+}
+
+.sociedade {
+    margin-top: 18rem;
+}
+
+.abelhinha {
+    display: flex;         
+    justify-content: space-between;
+    justify-content: center;
+    gap: 5rem;     
+    margin-left: 57rem;
+    margin-top: -46rem;
+    margin-bottom: 5rem;
+}
+
+.todososp {
+    margin-left: 63rem;
+}
+
+.sociedade1 {
+    display: flex;         
+    justify-content: space-between; 
+    margin-top: 5rem;  
+    margin-right: 3rem;
+    background-color: #4e4d4d;
+    padding-right: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    width: 44rem;
+    border-radius: 1rem;
+}
+
+.sociedade2 {
+    display: flex;         
+    justify-content: space-between;
+    margin-top: 3rem;  
+    background-color: #4e4d4d;
+    width: 44rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
+}
+
+.coloniaa {
+    display: flex;         
+    justify-content: space-between;
+    justify-content: center;
+    gap: 5rem; 
+    margin-top: -45rem;
+    margin-left: -65rem;
+    margin-bottom: 5rem;
+}
+
+.textos {
+    margin-left: 8rem;
+}
+
+.colonia1 {
+    display: flex;         
+    justify-content: space-between;
+    margin-top: 5rem;  
+    background-color: #4e4d4d;
+    width: 41rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
+    margin-left: -1rem;
+}
+
+.colonia2 {
+    display: flex;         
+    justify-content: space-between;
+    margin-top: 5rem;  
+    background-color: #4e4d4d;
+    width: 41rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
+    margin-left: -1rem;
+}
+
+.mar {
+    width: 57rem;
+    height: 45rem;
+    border-radius: 1rem;
+    margin-left: 56rem;
+    margin-top: 13rem;
+}
+
+.canibalismo {
+    margin-top: 15rem;
+    margin-left: 6rem;
+}
+
+.urso {
+    width: 57rem;
+    height: 45rem;
+    border-radius: 1rem;
+}
+
+.ursinho {
+    display: flex;         
+    justify-content: space-between;
+    justify-content: center;
+    gap: 5rem;     
+    margin-left: 57rem;
+    margin-top: -45rem;
+    margin-bottom: 10rem;
+}
+
+.conteudos {
+    margin-left: 63rem;
+    margin-top: -6rem;
+}
+
+.canibalismo1 {
+    display: flex;         
+    justify-content: space-between; 
+    margin-top: 5rem;  
+    margin-right: 3rem;
+    background-color: #4e4d4d;
+    padding-right: 6.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    width: 41rem;
+    border-radius: 1rem;
+}
+
+.canibalismo2 {
+    display: flex;         
+    justify-content: space-between;
+    margin-top: 3rem;  
+    background-color: #4e4d4d;
+    width: 41rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+    border-radius: 1rem;
+}
+
+.competicao {
+    width: 57rem;
+    height: 45rem;
+    border-radius: 1rem;
+    margin-left: 57rem;
+    margin-top: 13rem;
+}
+
+.competicoes {
+    display: flex;         
+    justify-content: space-between;
+    justify-content: center;
+    gap: 1rem; 
+    margin-left: -61rem;
+    margin-bottom: 5rem;
+    margin-top: -45rem;
+}
+
+.textinho {
+    margin-left: 8rem;
+}
+
+.competicao1 {
+    display: flex;         
+    justify-content: space-between;
+    margin-top: 5rem;  
+    background-color: #4e4d4d;
+    width: 41rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
+    margin-left: -1rem;
+}
+
+.competicao2 {
+    display: flex;         
+    justify-content: space-between;
+    margin-top: 2rem;  
+    background-color: #4e4d4d;
+    width: 41rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
+    margin-left: -1rem;
+}
+
+hr {
+    margin-top: 25rem;
+    border: none;              /* Remove a borda padrão */
+    height: 3px;               /* Define a espessura */
+    background-color: #004A0B; 
+}
+
+a {
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 2rem; 
+}
+
+.ct {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.setinha {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: right;
+}
+
+.int {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+}
+
+.cic {
+    margin-left: 35rem;
+    margin-right: 12rem;
+}

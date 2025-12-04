@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.mapa {
+    background-image: url(./Assets_jogo/Assets_jogo/Mapa.png);      
+    background-position: center;   
+    background-repeat: no-repeat;  
+    background-size: cover;
+    max-width: 1650px;
+    margin-inline: auto;
+    height: 100vh;
+    padding-top: 700px;
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fase1{
+    width: 150px;              
+    height: 150px;             
+    background-color: #6B4A1F; 
+    border: 2px solid #3C2B0F; 
+    border-radius: 15px;      
+    font-size: 60px;           
+    color: #3C2B0F;            
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    transition: transform 0.2s; 
+    position: relative;
+    top: -520px;
+    left: 150px;
+    text-decoration: none;
+    
+}
+
+.fase2{
+    width: 150px;              
+    height: 150px;             
+    background-color: #6B4A1F; 
+    border: 2px solid #3C2B0F; 
+    border-radius: 15px;      
+    font-size: 60px;           
+    color: #3C2B0F;            
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    transition: transform 0.2s; 
+    position: relative;
+    top: -420px;
+    left: 240px;
+    text-decoration: none;
+    
+}
+
+.seta {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.door button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    position: absolute;   
+    top: 830px;            
+    right: 155px;  
+}
+
+/* --- POPUP --- */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none; /* escondido por padrão */
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.popup {
+    background: #1e1e1e;
+    padding: 60px; /* mais espaçamento interno */
+    border-radius: 30px;
+    text-align: center;
+    width: 45rem;   /* TRIPLICADO */
+    color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    font-family: "Alfa Slab One", serif; /* garante a mesma fonte */
+    transform: scale(0.8);
+    opacity: 0;
+    animation: popupShow 0.3s ease forwards;
+}
+
+.popup h2 {
+    margin-bottom: 40px;
+    font-size: 50px;   /* aumentado */
+    line-height: 1.4;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.yes, .no {
+    padding: 20px 50px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.yes {
+    background: #2e6d2e;
+}
+
+.no {
+    background: #c62828;
+}
+
+.yes:hover {
+    background: #3d8b3d;
+}
+
+.no:hover {
+    background: #e53935;
+}
+
+/* ------------------- ANIMAÇÕES ------------------- */
+@keyframes fadeIn {
+    from { background: rgba(0,0,0,0); }
+    to { background: rgba(0,0,0,0.5); }
+}
+
+@keyframes popupShow {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

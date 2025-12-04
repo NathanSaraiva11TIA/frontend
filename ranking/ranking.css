@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 100;
+    top: 0;
+    transform-origin: top left;
+}
+
+header button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 2rem; 
+}
+
+header a {
+    padding: 1.5rem;
+    margin-left: 1rem;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+    z-index: 1000;
+    width: auto;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+header ul.show {
+    display: block;
+    opacity: 1;
+}
+
+header ul li {
+    margin: 1.2rem 0;
+    white-space: nowrap;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #AFACA9;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.fundo {
+    background-image: url(./assets/ChatGPT\ Image\ 26\ de\ nov.\ de\ 2025\,\ 01_43_50.png);
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.boneco {
+    height: 80%;
+    margin-left: 10rem;
+    margin-bottom: -13rem;
+}
+
+.Leaderboard {
+    background-color: rgba(44, 68, 50, 0.33); /* sua cor */
+    width: 45%;
+    margin-left: 15rem;
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+}
+
+.Leaderboard h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.posicoes {
+    list-style: none;
+    width: 100%;
+}
+
+.posicoes li {
+    background: white;
+    color: black;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.posicoes li span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Estilos adicionais para ranking vazio ou erro */
+.posicoes li.no-data {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-style: italic;
+    text-align: center;
+    justify-content: center;
+}
+
+.posicoes li.error {
+    background: rgba(255, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+

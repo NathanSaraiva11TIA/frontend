@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./imagem_de_fundo/0368743_view-over-foggy-jungle_photowallpaper__800.jpeg);
+    backdrop-filter: brightness(60%);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 1rem;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 100;
+    top: 0;
+    transform-origin: top left;
+}
+
+header button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 2rem; 
+}
+
+header a {
+    padding: 1.5rem;
+    margin-left: 1rem;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 0.5%;
+    right: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+    z-index: 1000;
+    width: auto;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+header ul.show {
+    display: block;
+    opacity: 1;
+}
+
+header ul li {
+    margin: 1.2rem 0;
+    white-space: nowrap;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #AFACA9;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+
+.conteudo {
+    background: rgba(0, 0, 0, 0.3);
+    margin: 3rem auto; /* margem e alinhamento no centro */
+    width: 80rem; /* tamanho */
+    height: 45rem;
+    padding: 3rem 4rem; /* em baixo,  do lado */
+    border-radius: 4rem; 
+    padding-top: 3.5rem;
+    }
+
+h1{
+    font-size: 5rem;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.quadrados{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-inline: 2rem;
+    margin-top: 3rem;
+}
+
+.carbono, .nitrogenio, .fosforo{
+    background-color: rgba(44, 78, 46, 0.7);
+    border-radius: 1rem;
+    width: 20rem;
+    height: 28rem;
+}
+
+.carbono img, .nitrogenio img, .fosforo img{
+    display: block;
+    margin: 0 auto; /* centraliza horizontalmente */
+    width: 10rem; 
+    margin-top: 2rem;
+}
+
+h2{
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 1.5rem;
+    margin-inline: 2rem;
+    text-align: center; /* centraliza o texto dentro do bloco */
+}
+
+
+.pagina{
+    font-family: "Bree Serif", serif;
+    
+    padding-inline: 2.2rem;
+    padding-block: 0.6rem;
+    border-radius: 1rem;
+    width: 12rem;
+    display: block; 
+    margin: 0 auto;
+    cursor: pointer;  /* Cursor de clique */
+    border: none;
+    margin-top: 1.5rem;
+
+    background-color: #777373;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
