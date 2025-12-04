@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(./imagem_de_fundo/0368743_view-over-foggy-jungle_photowallpaper__800.jpeg);
+    background-image: url(./pages/imagem_de_fundo/0368743_view-over-foggy-jungle_photowallpaper__800.jpeg);
     backdrop-filter: brightness(60%);
     background-repeat: no-repeat;
     height: 100vh;
