@@ -8,7 +8,7 @@ async function logar() {
   }
 
   try {
-    const resposta = await fetch("https://backend-production-ec72d.up.railway.app/login", {
+    const resposta = await fetch("http://localhost:3333/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, senha })
@@ -30,7 +30,7 @@ async function logar() {
     alert("Login realizado com sucesso!");
 
     // Redirecionar para a página inicial
-    window.location.href = "../pages";
+    window.location.href = "../index.html";
     
   } catch (erro) {
     console.error("Erro no login:", erro);

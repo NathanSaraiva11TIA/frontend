@@ -16,7 +16,7 @@ async function cadastrar() {
   }
 
   try {
-    const resposta = await fetch("https://backend-production-ec72d.up.railway.app/cadastro", {
+    const resposta = await fetch("http://localhost:3333/cadastro", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ nome, email, senha })
@@ -33,7 +33,7 @@ async function cadastrar() {
       localStorage.setItem('emailJogador', email);
       
       // Redirecionar para a página inicial
-      window.location.href = "../pages";
+      window.location.href = "../index.html";
     }
   } catch (erro) {
     console.error("Erro no cadastro:", erro);

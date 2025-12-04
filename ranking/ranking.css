@@ -5,16 +5,12 @@
 }
 
 header {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent;
-    z-index: 100;
+    position: fixed;     /* Agora fica SEMPRE na frente */
     top: 0;
-    transform-origin: top left;
+    width: 100%;
+    z-index: 99999;      /* Bem acima de tudo */
 }
+
 
 header button {
     background: none;
@@ -73,7 +69,8 @@ header ul li a {
     background-size: cover;
     background-position: center;
     color: white;
-
+    position: relative; /* garante que o z-index funcione corretamente */
+    z-index: 1;         /* fica abaixo do header */
     display: flex;
     align-items: center;
 }
