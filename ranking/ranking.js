@@ -55,8 +55,8 @@ async function carregarRanking() {
 
 // Função para verificar se usuário está logado
 function verificarLogin() {
-  const usuarioLogado = localStorage.getItem('usuarioLogado');
-  const nomeUsuario = localStorage.getItem('nomeUsuario');
+  const usuarioLogado = sessionStorage.getItem('usuarioLogado');
+  const nomeUsuario = sessionStorage.getItem('nomeUsuario');
   
   // Esta função é opcional, apenas se quiser mostrar info do usuário no ranking
   if (usuarioLogado === 'true' && nomeUsuario) {
