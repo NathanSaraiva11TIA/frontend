@@ -55,8 +55,8 @@
     <script>
         // Função para verificar se o usuário está logado
         function verificarLogin() {
-            const usuarioLogado = localStorage.getItem('usuarioLogado');
-            const nomeUsuario = localStorage.getItem('nomeUsuario');
+            const usuarioLogado = sessionStorage.getItem('usuarioLogado');
+            const nomeUsuario = sessionStorage.getItem('nomeUsuario');
             
             const btnLogin = document.getElementById('btnLogin');
             const areaUsuarioLogado = document.getElementById('areaUsuarioLogado');
@@ -77,10 +77,10 @@
         // Função para fazer logout
         function sair() {
             if (confirm('Tem certeza que deseja sair?')) {
-                localStorage.removeItem('usuarioLogado');
-                localStorage.removeItem('nomeUsuario');
-                localStorage.removeItem('emailUsuario');
-                localStorage.removeItem('emailJogador');
+                sessionStorage.removeItem('usuarioLogado');
+                sessionStorage.removeItem('nomeUsuario');
+                sessionStorage.removeItem('emailUsuario');
+                sessionStorage.removeItem('emailJogador');
                 window.location.reload();
             }
         }

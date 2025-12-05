@@ -16,7 +16,7 @@ noBtn.addEventListener("click", () => {
 
 // Redirecionar ao clicar em "Sim"
 yesBtn.addEventListener("click", () => {
-  window.location.href = "index.html"; // ajuste o link da sua página inicial
+  window.location.href = "../index.html"; // ajuste o link da sua página inicial
 });
 
 // Fechar clicando fora da caixa
@@ -24,4 +24,17 @@ overlay.addEventListener("click", (e) => {
   if (e.target === overlay) {
     overlay.style.display = "none";
   }
+});
+
+document.getElementById("btnComecar").addEventListener("click", () => {
+
+    const logado = sessionStorage.getItem("usuarioLogado");
+
+    if (logado !== "true") {
+        alert("Você precisa estar logado para iniciar a aventura!");
+        window.location.href = "../login/login.html"; 
+        return;
+    }
+
+    window.location.href = "../pages/jogo2.html";
 });

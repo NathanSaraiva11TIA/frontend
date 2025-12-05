@@ -8,7 +8,7 @@ async function logar() {
   }
 
   try {
-    const resposta = await fetch("http://localhost:3333/login", {
+    const resposta = await fetch("http://backend-production-ec72d.up.railway.app/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, senha })
@@ -22,10 +22,10 @@ async function logar() {
     }
 
     // Salvar informações no localStorage
-    localStorage.setItem('usuarioLogado', 'true');
-    localStorage.setItem('nomeUsuario', dados.usuario.nome);
-    localStorage.setItem('emailUsuario', email);
-    localStorage.setItem('emailJogador', email);
+    sessionStorage.setItem('usuarioLogado', 'true');
+    sessionStorage.setItem('nomeUsuario', dados.usuario.nome);
+    sessionStorage.setItem('emailUsuario', email);
+    sessionStorage.setItem('emailJogador', email);
     
     alert("Login realizado com sucesso!");
 

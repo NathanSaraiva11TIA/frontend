@@ -16,7 +16,7 @@ async function cadastrar() {
   }
 
   try {
-    const resposta = await fetch("http://localhost:3333/cadastro", {
+    const resposta = await fetch("http://backend-production-ec72d.up.railway.app/cadastro", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ nome, email, senha })
@@ -27,10 +27,10 @@ async function cadastrar() {
 
     if (dados.sucesso) {
       // Salvar informações no localStorage
-      localStorage.setItem('usuarioLogado', 'true');
-      localStorage.setItem('nomeUsuario', nome);
-      localStorage.setItem('emailUsuario', email);
-      localStorage.setItem('emailJogador', email);
+      sessionStorage.setItem('usuarioLogado', 'true');
+      sessionStorage.setItem('nomeUsuario', nome);
+      sessionStorage.setItem('emailUsuario', email);
+      sessionStorage.setItem('emailJogador', email);
       
       // Redirecionar para a página inicial
       window.location.href = "../index.html";

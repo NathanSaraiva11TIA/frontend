@@ -16,7 +16,7 @@ noBtn.addEventListener("click", () => {
 
 // Redirecionar ao clicar em "Sim"
 yesBtn.addEventListener("click", () => {
-  window.location.href = "index.html"; // ajuste o link da sua página inicial
+  window.location.href = "../index.html"; // ajuste o link da sua página inicial
 });
 
 // Fechar clicando fora da caixa

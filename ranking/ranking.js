@@ -18,8 +18,7 @@ document.addEventListener("click", (e) => {
 // Função para carregar ranking
 async function carregarRanking() {
   try {
-    const resposta = await fetch("http://localhost:3333/ranking");
-
+    const resposta = await fetch("http://backend-production-ec72d.up.railway.app/ranking");
     if (!resposta.ok) {
       throw new Error(`Erro HTTP: ${resposta.status}`);
     }
