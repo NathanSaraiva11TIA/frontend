@@ -16,7 +16,7 @@ async function cadastrar() {
   }
 
   try {
-    const resposta = await fetch("http://backend-production-ec72d.up.railway.app/cadastro", {
+    const resposta = await fetch("https://backend-production-ec72d.up.railway.app/cadastro", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ nome, email, senha })
