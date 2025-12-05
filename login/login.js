@@ -8,7 +8,7 @@ async function logar() {
   }
 
   try {
-    const resposta = await fetch("http://localhost:3333/login", {
+    const resposta = await fetch("https://backend-one-roan-83.vercel.app/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, senha })
